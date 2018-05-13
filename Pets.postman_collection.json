@@ -1,0 +1,391 @@
+{
+	"id": "2a234484-7cdb-4d1d-9a29-4d231756e48b",
+	"name": "Pets",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"83918fa9-50a4-4cce-ba15-ff051c7d4dd7",
+		"a9284b50-eb91-4dc5-a778-e8b106ef9bde",
+		"d49f1b78-6bb7-4888-8dfd-8c7a566fdbcb",
+		"12d139d2-2613-4bec-a401-5d336f6d17f0",
+		"37ec8c32-06ae-418b-962b-e257ccf30912",
+		"272d8765-7828-4408-a985-4b4e15880463",
+		"c209cdfe-4ee9-4eaf-9394-f45b058234b9",
+		"882420b7-243e-4c78-afcb-a0edbf38bc5c",
+		"0c0b40a6-8463-4abf-964c-abc0bc69916b",
+		"5b617362-5c6e-4ec7-a574-a296ae3dfa08",
+		"090ca1de-984d-4895-9f20-9919062542cc",
+		"dc086a14-874d-48e8-b836-6b32bfa85df7",
+		"68d2157d-105f-49d9-a5c8-07121079c9e1",
+		"75e1feb8-338f-4502-98a1-39870a01cc72",
+		"11b646f4-7574-403b-9aa5-ec25c93359e7",
+		"c0cbad99-a1f0-4f41-be0b-4d190eb4081f",
+		"23e0928e-6467-4d89-bc64-aa4635aa1d6f"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "090ca1de-984d-4895-9f20-9919062542cc",
+			"name": "Get a Pet Rabbit by ID",
+			"url": "http://petstore.swagger.io/v2/pet/111222334",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0c0b40a6-8463-4abf-964c-abc0bc69916b",
+			"name": "Get all Pets with status Sold",
+			"url": "http://petstore.swagger.io/v2/pet/findByStatus?status=sold",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "status",
+					"value": "sold",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "[\r\n  {\r\n    \"id\": 0,\r\n    \"category\": {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    },\r\n    \"name\": \"doggie\",\r\n    \"photoUrls\": [\r\n      \"string\"\r\n    ],\r\n    \"tags\": [\r\n      {\r\n        \"id\": 0,\r\n        \"name\": \"string\"\r\n      }\r\n    ],\r\n    \"status\": \"sold\"\r\n  }\r\n]",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "11b646f4-7574-403b-9aa5-ec25c93359e7",
+			"name": "Delete a Pet Rabbit without api-key",
+			"url": "",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "12d139d2-2613-4bec-a401-5d336f6d17f0",
+			"name": "Update the name to Catty and the status to Sold",
+			"url": "",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "23e0928e-6467-4d89-bc64-aa4635aa1d6f",
+			"name": "Get a non-existent Pet",
+			"url": "",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "272d8765-7828-4408-a985-4b4e15880463",
+			"name": "Delete a Pet Catty",
+			"url": "",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "37ec8c32-06ae-418b-962b-e257ccf30912",
+			"name": "Get a Pet Catty by ID",
+			"url": "http://petstore.swagger.io/v2/pet/111222333",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "5b617362-5c6e-4ec7-a574-a296ae3dfa08",
+			"name": "Add a new Pet Rabbit with status sold",
+			"url": "http://petstore.swagger.io/v2/pet",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"id\": 111222334,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"Rabbit\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"sold\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "68d2157d-105f-49d9-a5c8-07121079c9e1",
+			"name": "Upload the image to the Pet",
+			"url": "",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "75e1feb8-338f-4502-98a1-39870a01cc72",
+			"name": "Get a Pet Rabbit by ID",
+			"url": "http://petstore.swagger.io/v2/pet/111222333",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "83918fa9-50a4-4cce-ba15-ff051c7d4dd7",
+			"name": "Add a new Pet Cattie with status available",
+			"url": "http://petstore.swagger.io/v2/pet",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"id\": 111222333,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"CATTIE\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "882420b7-243e-4c78-afcb-a0edbf38bc5c",
+			"name": "Get all Pets with status Available",
+			"url": "http://petstore.swagger.io/v2/pet/findByStatus?status=available",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "status",
+					"value": "available",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a9284b50-eb91-4dc5-a778-e8b106ef9bde",
+			"name": "Add a new Pet Cattie1 with status pending",
+			"url": "http://petstore.swagger.io/v2/pet",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"id\": 111222333,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"CATTIE\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"pending\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c0cbad99-a1f0-4f41-be0b-4d190eb4081f",
+			"name": "Get a Pet Rabbit by ID",
+			"url": "http://petstore.swagger.io/v2/pet/111222333",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c209cdfe-4ee9-4eaf-9394-f45b058234b9",
+			"name": "Get a Pet Catty by ID",
+			"url": "http://petstore.swagger.io/v2/pet/111222333",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "d49f1b78-6bb7-4888-8dfd-8c7a566fdbcb",
+			"name": "Get a Pet Cattie  by ID",
+			"url": "http://petstore.swagger.io/v2/pet/111222333",
+			"description": null,
+			"data": [],
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "dc086a14-874d-48e8-b836-6b32bfa85df7",
+			"name": "Get all Pets with status Pending",
+			"url": "http://petstore.swagger.io/v2/pet/findByStatus?status=pending",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "status",
+					"value": "pending",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e8d26eeb-bbc6-45df-b2c5-af05a00f1453",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"folder": null,
+			"rawModeData": "{\r\n  \"id\": 111222333,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"CATTIE\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"pending\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
